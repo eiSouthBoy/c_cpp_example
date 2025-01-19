@@ -15,7 +15,7 @@ int main(void)
 			BracketInfo elem = { 0 };
 			elem.idx = i;
 			elem.bracket = buffer[i];
-			stack_push(&sq_stack_t, elem); // ÈëÕ»
+			stack_push(&sq_stack_t, elem);
 		}
 		else if (buffer[i] == ']' || buffer[i] == ')' || buffer[i] == '}')
 		{
@@ -25,21 +25,21 @@ int main(void)
 			{
 				if (elem_top.bracket == '[')
 				{
-					stack_pop(&sq_stack_t, &elem); // ³öÕ»
+					stack_pop(&sq_stack_t, &elem);
 				}
 			}
 			else if (buffer[i] == ')')
 			{
 				if (elem_top.bracket == '(')
 				{
-					stack_pop(&sq_stack_t, &elem); // ³öÕ»
+					stack_pop(&sq_stack_t, &elem);
 				}
 			}
 			else if (buffer[i] == '}')
 			{
 				if (elem_top.bracket == '{')
 				{
-					stack_pop(&sq_stack_t, &elem); // ³öÕ»	
+					stack_pop(&sq_stack_t, &elem);
 				}
 			}
 			if(elem.bracket == 0)
