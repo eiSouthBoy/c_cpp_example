@@ -1,0 +1,3 @@
+[submodule "005-ninja-hello-world/gn"]
+	path = 005-ninja-hello-world/gn
+	url = https://gn.googlesource.com/gn

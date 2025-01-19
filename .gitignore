@@ -3,3 +3,4 @@ logs
 *.log
 *.out
 .vscode
+005-ninja-hello-world/out
