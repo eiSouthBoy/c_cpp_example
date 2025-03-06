@@ -57,7 +57,7 @@ typedef struct
 
 //==============================================================================
 // Global functions
-// c-111
+// d-111
 
 int queue_init(sq_queue_t *sq_queue_pt);
 int queue_destory(sq_queue_t *sq_queue_pt);
